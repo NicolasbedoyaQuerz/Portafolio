@@ -76,7 +76,10 @@ const nav = document.querySelector('.nav'),
     }
 
     const formulario = document.querySelector('#form')
-      const sendForm = document.querySelector('#Email')
+      const sendForm = document.querySelector('#Email');
+      submitbtn.addEventListener('click', () => {
+        asideSectionTogglerbtn();
+    })
 
       formulario.addEventListener('submit', handleSubmit)
 
