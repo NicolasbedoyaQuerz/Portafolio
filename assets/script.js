@@ -60,6 +60,8 @@ const nav = document.querySelector('.nav'),
         removeBackSection();
         addBackSection(sectionIndex);
     })
+
+
     const navTogglerbtn = document.querySelector('.nav-toggler'),
     aside = document.querySelector('.aside');
     navTogglerbtn.addEventListener('click', () => {
@@ -73,4 +75,14 @@ const nav = document.querySelector('.nav'),
         }
     }
 
-    
+    const formulario = document.querySelector('#form')
+      const sendForm = document.querySelector('#Email')
+
+      formulario.addEventListener('submit', handleSubmit)
+
+      function handleSubmit(e) {
+        e.preventDefault()
+        const form = new FormData(this)
+        sendForm.setAttribute('href', `mailto:Nicolasbedoya32@gmail.com?subject=${form.get('Name')}  - ${form.get('Email')} - ${form.get('Subject')}&body=${form.get('Message')}`)
+        sendForm.click()
+    }
