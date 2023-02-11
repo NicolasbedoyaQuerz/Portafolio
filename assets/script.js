@@ -74,18 +74,3 @@ const nav = document.querySelector('.nav'),
             allSection[i].classList.toggle('open');
         }
     }
-
-    const formulario = document.querySelector('#form')
-      const sendForm = document.querySelector('#Email');
-      submitbtn.addEventListener('click', () => {
-        asideSectionTogglerbtn();
-    })
-
-      formulario.addEventListener('submit', handleSubmit)
-
-      function handleSubmit(e) {
-        e.preventDefault()
-        const form = new FormData(this)
-        sendForm.setAttribute('href', `mailto:Nicolasbedoya32@gmail.com?subject=${form.get('Name')}  - ${form.get('Email')} - ${form.get('Subject')}&body=${form.get('Message')}`)
-        sendForm.click()
-    }
