@@ -119,6 +119,8 @@ ul {
     padding-right: 15px;
 }
 
+
+
 .container {
     max-width: 1100px;
     width: 100%;
@@ -481,6 +483,7 @@ h3.my-profession {
     margin-top: 40px;
 }
 
+
 .about .about-content .skills .skill-item {
     flex: 0 0 100%;
     max-width: 100%;
@@ -507,6 +510,14 @@ h3.my-profession {
     flex: 0 0 50%;
     max-width: 50%;
     margin-top: 30px;
+}
+
+.about .about-content .education {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 600px; /* Puedes ajustar el ancho según tus necesidades */
+    padding: 0px;
 }
 
 .about .about-content h3.title {
